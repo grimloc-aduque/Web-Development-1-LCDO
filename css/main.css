@@ -1,0 +1,260 @@
+
+/* ------------ DISEÑO TEXTO ------------*/
+*, a{
+  font-family: 'Rowdies';
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+@font-face {
+ font-family: Babylon;
+ src: url("../blessings-of-babylon-font/BlessingsOfBabylon-rXg7.ttf");
+}
+p,a,li{
+  font-size:1.1rem;
+}
+p, a{
+  line-height: 32px;
+  text-decoration: none;
+}
+.normal{
+  font-family: "Open Sans";
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+h1{
+  color: RGB(255,212,42);
+}
+.red{
+  color: RGB(255,42,42);
+}
+.yellow{
+  color:RGB(255,212,42);
+}
+a:hover{
+  color:RGB(255,42,42);
+  text-decoration: none;
+}
+
+
+
+
+/* ------------ ESTRUCTURA GENERAL ------------ */
+div.seccion{
+  height: 100vh;
+  background-size: cover;
+}
+div.container{
+  height: 97vh;
+  margin-bottom: 3vh;
+}
+
+
+
+/* ------------ BARRA NAVEGACION ------------*/
+.navbar{
+  background-color:RGBA(0,0,0,0.2);
+}
+#logoNav{
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 0.2vh;
+}
+.seccionActual{
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-decoration-color:  RGB(255,42,42);
+}
+/* Clases necesarias para desaparecer la barra */
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+
+
+/* ------------ HOME ------------ */
+
+.seccion.Home{
+  background-image: url("../public/texturaHome.png");
+}
+.logo{
+  font-family: "Babylon";
+  color: RGBA(0,0,0,0.3);
+  -webkit-text-stroke-color: RGB(255,42,42);;
+}
+#logoHome{
+  font-size:22vh;
+  margin: 10vh 0 10vh 0;
+  -webkit-text-stroke-width: 0.5vh;
+}
+#citaHome{
+  font-size: 1.05em;
+  border-style: solid;
+  padding-top: 1vh;
+  border-color: RGB(255,212,42);
+  border-width: 0.5vh 0 0 0 ;
+}
+
+
+
+/* ------------ Noticias ------------ */
+
+div.seccion.Noticias{
+  background-image: url("../public/texturaNoticias.png");
+  height: 140vh;
+}
+div.container.Noticias{
+  height: 140vh;
+}
+#tituloNoticias{
+  display: block;
+  padding-top: 19vh;
+  margin: 0vh 0 5vh 0;
+}
+img.galeria{
+  border-radius: 2vh;
+  border-style: solid;
+  border-width: 0.4vh;
+  margin: 5vh;
+  height: 32vh;
+  width: 32vh;
+}
+img.red{
+  border-color: RGB(255,42,42);
+}
+img.red:hover{
+  border-color:RGB(255,212,42);
+}
+
+/* Ventana modal */
+.modal-content{
+  background-color:RGBA(0,0,0,0.9);
+}
+#imagenModal{
+  height: 60vh;
+  width: 60vh;
+}
+button.myButton{
+  font-size: 1.5rem;
+  color: RGB(255,42,42);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+
+/* ------------ MÚSICA ------------*/
+
+.seccion.Musica{
+  background-image: url("../public/texturaMusica.png");
+}
+#tituloMusica{
+  margin: 6vh 0 6vh 0;
+}
+.bandcampGrande{
+  margin-top: 3.2vw;
+}
+iframe{
+  padding: 0.25vh;
+  background-color: RGB(255,42,42);
+  border-radius: 2vh;
+}
+
+
+
+/* ------------ Conciertos ------------*/
+
+.seccion.Conciertos{
+  background-image: url("../public/texturaConciertos.png");
+}
+#tituloConciertos{
+  margin-bottom: 8vh;
+}
+ul{
+  margin-top: 8vh;
+  list-style: none;
+}
+li{
+  text-align: right;
+  margin-bottom: 6vh;
+  padding-right: 5vh;
+  border-style: solid;
+  border-color: RGB(255, 42, 42);
+  border-width: 0 0.5vh 0 0 ;
+}
+li#ultimo{
+    margin-bottom: 0vh;
+}
+
+
+/* ------------ LA BANDA ------------ */
+
+.seccion.Banda{
+  background-image: url("../public/texturaBanda.png");
+}
+#tituloBanda{
+  margin: 1vh 0 4vh 0;
+}
+img.carrusel{
+  height: 50vh;
+  border-radius: 2vh;
+  border-style: solid;
+  border-width: 0.4vh;
+  border-color: RGB(255,42,42)
+}
+p#descripcion, #citaHome{
+  line-height: 26px;
+}
+
+
+/* ------------ CONTACTO ------------ */
+
+.seccion.Contacto{
+  background-image: url("../public/texturaContacto.png");
+}
+.logoExterno{
+  height: 8vh;
+}
+#logoContacto{
+  font-size: 12vh;
+  -webkit-text-stroke-width: 0.4vh;
+  margin: 10vh 0 3vh 0;
+}
+#logoInstagram, #logoBandcamp{
+  margin: 3vh 1vh 4vh 1vh;
+}
+
+
+/* ---------- CAMBIOS PARA PANTALLA PEQUEÑA/MEDIANA ---------- */
+
+@media only screen and (max-width: 1200px) {
+  .navbar{
+    background-color:RGBA(0,0,0,1);
+  }
+  *{
+    letter-spacing: 0.5px;
+  }
+  p,a,li{
+    font-size:1.05rem;
+  }
+  #logoHome{
+    font-size:16.5vh;
+  }
+  #tituloConciertos{
+   margin: 10vh 0 0 0;
+  }
+  #instagramCelular{
+    height: 0;
+  }
+
+}
