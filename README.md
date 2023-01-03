@@ -4,4 +4,4 @@ LCDO band advertising website: https://grimloc-aduque.github.io/Web-Development-
 
 <img src="https://github.com/grimloc-aduque/Web-Development-1-LCDO/blob/master/git_images/inicio.png" style="width:600px;"/>
 
-<img src="https://github.com/grimloc-aduque/Web-Development-1-LCDO/blob/master/git_images/conciertos.png" style="width:600px;"/>
+<img src="https://github.com/grimloc-aduque/Web-Development-1-LCDO/blob/master/git_images/conciertos.png" style="width:600px;"/> 
